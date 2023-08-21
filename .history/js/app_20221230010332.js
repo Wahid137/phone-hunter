@@ -55,7 +55,7 @@ const toggleSpinner = isLoading => {
 
 const loadPhoneDetail = phoneSlug => {
     const url = `https://openapi.programming-hero.com/api/phone/${phoneSlug}`
-    //console.log(url);
+    console.log(url);
     fetch(url)
         .then(res => res.json())
         .then(data => displayPhoneDetail(data.data))
